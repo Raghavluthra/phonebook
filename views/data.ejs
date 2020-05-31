@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <table class="table" style="width:80%;margin:40px auto;">
+            <tr class="thead-dark">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+            </tr>
+            <% data.forEach(function(ele){ %>
+                        <td><a href="/details/<%=ele._id%>"><%= ele.Name %></td></a>
+                        <td><a href="/details/<%=ele._id%>"><%= ele.Email %></td></a>
+                        <td><a href="/details/<%=ele._id%>"><%= ele.Phoneno %></td></a>
+                    </tr>
+                <% }) %>
+        </table>
+        
+    </body>
+</html>
